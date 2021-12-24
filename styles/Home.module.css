@@ -6,24 +6,36 @@
  
 }
 .header {
-  background-color: #e95c4d;;
+ 
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon{ 
+  display: flex;
+  list-style: none;  
 }
 .img {
-display: block; 
-margin: auto; 
-}
-.icon{
- 
-}
-.facebook,
-.github{
-  margin-bottom: 35px;
-  color: rgb(255, 255, 255);
-  font-size: 50px;
+  width: 300px;
+  height: 70px; 
+  }
+.linkedin,
+.github,
+.twitter{
+  color: rgb(129, 126, 126);
+  font-size: 45px;
   margin: 0 auto;
+  margin-right: 15px;
   padding-bottom: 10px;
   border-bottom: 4px solid transparent;
+}
+.linkedin:hover,
+.github:hover,
+.twitter:hover {
+  color: black;
+
 }
 .container ul {
   padding: 0;

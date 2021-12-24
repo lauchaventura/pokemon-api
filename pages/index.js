@@ -4,7 +4,7 @@ import Image from 'next/image'
 import HomeCss from '../styles/Home.module.css'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home({ pokemones, minimimosDatos, tipos, notFound }) {
 
@@ -43,14 +43,16 @@ export default function Home({ pokemones, minimimosDatos, tipos, notFound }) {
       <div className={HomeCss.header}>
         <img className={HomeCss.img} src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt='Logo' />
         <div className={HomeCss.icon}>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon className={HomeCss.facebook} icon={faFacebook} />
+          <a href="https://www.linkedin.com/in/lautaro-ventura-041513229/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon className={HomeCss.linkedin} icon={faLinkedinIn} />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/lauchaventura" target="_blank" rel="noreferrer">
             <FontAwesomeIcon className={HomeCss.github} icon={faGithub} />
           </a>
+          <a href="https://twitter.com/lauchaventura" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon className={HomeCss.twitter} icon={faTwitter} />
+          </a>
         </div>
-
       </div>
       <div className={HomeCss.container}>
         <div className={HomeCss.filtros}>
